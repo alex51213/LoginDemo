@@ -1,6 +1,6 @@
 <%-- 
-    Document   : c
-    Created on : 2023年12月15日, 下午4:43:14
+    Document   : b
+    Created on : 2023年12月15日, 下午4:43:09
     Author     : student
 --%>
 
@@ -9,12 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page 2.0</title>
+        <title>JSP Page</title>
     </head>
     <body>
-        <h1>Page c</h1>
-        <h2>多增加一行</h2>
-        <h3>這是commite[C2]</h3>
-        <a href="d.jsp">page_d</a>
+        <h1>Page b</h1>
+        <a href="c.jsp">Page_c</a>
+         <a href="d.jsp">Page_d</a>
     </body>
 </html>
