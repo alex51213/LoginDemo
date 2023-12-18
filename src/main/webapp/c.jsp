@@ -14,6 +14,7 @@
     <body>
         <h1>Page c</h1>
         <h2>這是c.jsp</h2>
+        <h3>這是commite[C1]</h3>
         <a href="d.jsp">page_d</a>
     </body>
 </html>
