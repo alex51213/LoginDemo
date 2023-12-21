@@ -1,6 +1,6 @@
 <%-- 
-    Document   : d
-    Created on : 2023年12月15日, 下午4:43:20
+    Document   : paramPass
+    Created on : 2023年12月20日, 下午1:35:52
     Author     : student
 --%>
 
@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h2> 提示: <%= request.getAttribute("errmsg") %>    </h2>
-        <h2> 提示: <%= request.getAttribute("msg2") %>    </h2>
+       <h1>看到這一頁 表示你登入成功</h1>
+        這裡 會顯示 LoginCheck2 傳過來的參數:   <%= request.getParameter("msg") %>
     </body>
 </html>

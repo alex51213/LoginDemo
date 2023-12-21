@@ -14,9 +14,9 @@
     <body>
         您目前的位置在<%=request.getRequestURI()%>
         <h1>會員登入</h1>
-        <form action="checkpass.jsp">
+        <form  method="post"action="CheckLogin2">
             帳號:<input type="text" name="username" value="" /><br>
-            密碼:<input type="password" name="passwrd" value="" /><br>
+            密碼:<input type="password" name="passwd" value="" /><br>
             <input type="submit" value="登入" />
             <input type="reset" value="清除" />
         </form>

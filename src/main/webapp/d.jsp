@@ -12,8 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>到底是從b or c哪邊來的?</h1>
-        <%= request.getHeader("Referer")%>
-                
+        <h2> 提示: <%= request.getAttribute("errmsg") %>    </h2>
+        <h2> 提示: <%= request.getAttribute("msg2") %>    </h2>
     </body>
 </html>
