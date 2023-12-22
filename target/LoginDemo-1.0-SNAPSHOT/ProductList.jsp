@@ -43,7 +43,13 @@
        %>
        
        <%
-           int p1Type=Integer.valueOf(request.getParameter("p1"));
+            String v = request.getParameter("pl") ;
+            int p1Type = 0;
+            if( v == null ) {
+            p1Type = 1;
+            } else {
+            p1Type = Integer.parseInt(v);
+            }
            // 請注意 跨資料庫查詢時要加上  Database.Table 格式
            String sql = "Select * from classicmodels.products where productLine = '";          
           
@@ -76,6 +82,8 @@
        %>
        
     <body>
+        <a href="shoppingCartList.jsp">檢視購物車</a>
+        <a href="checkOutList.jsp">結帳</a>
          <h1>商品列表</h1>
           <h3> 查詢類型: <%= productLine %> </h3>
         <h3>語法: <%= sql %> </h3>

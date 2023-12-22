@@ -60,16 +60,17 @@
         <h1>購物項目</h1>
         <h2> 您目前有  <%= shoppingCart.size() %>  項產品在購物車內</h2>
         <% if( user == null ) {  %>
-            <h3 font-style="color: #red"> 提醒您 你目前尚未登入 </h3>
+            <h3 style="color: #red"> 提醒您 你目前尚未登入 </h3>
         <% } %>
         <hr/>
         您剛點選的產品是: <%=  pid %>  <br/>
-        品名: <%= pname %>
-        // 取出 session 
-        // 將收到的 產品資訊(產品代號,品名, 數量) 
-        // 放入購物車(容器, 可存放多筆產品資料)
-        // 購物車的結構要怎樣放上述的資料  一筆資料要?  
-        // 收到重複的 pid 怎處理?
+        品名: <%= pname %><br/>
+        <button onclick="location.href='ProductList.jsp'">回商品列表</button>
+        <%-- 取出 session 
+         將收到的 產品資訊(產品代號,品名, 數量) 
+        放入購物車(容器, 可存放多筆產品資料)
+        購物車的結構要怎樣放上述的資料  一筆資料要?  
+        收到重複的 pid 怎處理? --%>
                 
     </body>
 </html>

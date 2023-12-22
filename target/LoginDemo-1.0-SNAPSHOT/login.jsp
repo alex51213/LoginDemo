@@ -11,6 +11,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
+    <%
+       // 將 Referer 記錄起來(放到 session ) 供 CheckLogin2 使用 
+       session.setAttribute("from", request.getHeader("Referer"));
+    %>
     <body>
         您目前的位置在<%=request.getRequestURI()%>
         <h1>會員登入</h1>

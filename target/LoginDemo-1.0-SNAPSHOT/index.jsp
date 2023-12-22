@@ -25,5 +25,6 @@
          <h1>會員登入系統: session id:<%= session.getId()%></h1>
         <a href="/LoginDemo/login.jsp">登入會員系統</a>     
         <a href="ProductQuery.jsp">模型商品</a>
+        <a href="shoppingCartList.jsp">檢視購物車</a>
     </body>
 </html>
